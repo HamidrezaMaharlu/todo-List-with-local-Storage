@@ -1,0 +1,179 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 1rem;
+}
+
+.todoList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 70%;
+}
+
+input[type=text] {
+    width: 98%;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+input[type=date] {
+    width: 99%;
+    height: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+form button {
+    width: 100%;
+    background-color: #2c8302;
+    height: 3.5rem;
+    border: #2c8302;
+    color: white;
+}
+
+.tasksSection {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.tasks {
+    width: 100%;
+    background-color: #b6d8e6;
+    min-height: 50vh;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.doing {
+    width: 100%;
+    background-color: #f2f1b2;
+    min-height: 50vh;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.completed {
+    width: 100%;
+    background-color: #9ff08d;
+    min-height: 50vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0 0 .8rem 0;
+}
+
+.todo {
+    background-color: white;
+    padding: .8rem;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    margin-bottom: .8rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.startDate {
+    margin-bottom: .8rem;
+}
+
+.description {
+    display: none;
+}
+.description.show {
+    display: block;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .8rem;
+}
+button {
+    cursor: pointer;
+}
+.todo button {
+    padding: 1rem 2rem;
+    background-color: #b5d8e6;
+    border: #b5d8e6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 900px) {
+    input[type=text] {
+        width: 32%;
+        margin-right: .8rem;
+    }
+
+    input[type=date] {
+        width: 15%;
+        margin-right: .8rem;
+    }
+
+    form button {
+        width: 15%;
+        border-radius: 0;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .tasksSection {
+        flex-direction: row;
+    }
+
+    .tasks {
+        width: 32%;
+        padding: .8rem;
+
+    }
+
+    .doing {
+        width: 32%;
+        padding: .8rem;
+
+    }
+
+    .completed {
+        width: 32%;
+        padding: .8rem;
+
+    }
+}
